@@ -1,0 +1,7 @@
+.example__title {
+  @include font-text-index-title;
+}
+
+.example__text {
+  @include font-text;
+}

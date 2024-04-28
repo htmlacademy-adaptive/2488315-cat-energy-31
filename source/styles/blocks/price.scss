@@ -1,0 +1,11 @@
+.price__key {
+  @include font-text-result;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price__value {
+  @include font-text-result;
+  font-size: 14px;
+  line-height: 20px;
+}

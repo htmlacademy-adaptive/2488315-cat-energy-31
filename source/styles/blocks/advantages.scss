@@ -1,0 +1,7 @@
+.advantages__title {
+  @include font-text-index-title;
+}
+
+.advantages__item {
+  @include font-text;
+}

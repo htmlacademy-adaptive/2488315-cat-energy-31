@@ -1,0 +1,82 @@
+@mixin font-text {
+  font-family: "Lato", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+}
+
+@mixin font-text-catalog-products {
+  font-family: "Lato", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+
+@mixin font-text-catalog-additionals {
+  font-family: "Lato", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+}
+
+@mixin font-text-catalog {
+  font-family: "Lato", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+}
+
+@mixin font-text-index-title {
+  font-family: "Oswald", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+@mixin font-text-index-program {
+  font-family: "Oswald", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin font-text-cards {
+  font-family: "Oswald", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin font-text-result {
+  font-family: "Oswald", "Ariel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}

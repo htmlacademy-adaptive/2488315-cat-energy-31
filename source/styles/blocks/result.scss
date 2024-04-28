@@ -1,0 +1,7 @@
+.result__key {
+  @include font-text-result;
+}
+
+.result__value {
+  @include font-text;
+}

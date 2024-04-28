@@ -1,0 +1,8 @@
+.adress__partnership {
+  @include font-text-cards;
+}
+
+.adress__text {
+  @include font-text;
+  line-height: 20px;
+}

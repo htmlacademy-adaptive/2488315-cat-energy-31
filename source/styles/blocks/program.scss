@@ -1,0 +1,10 @@
+.program__title {
+  @include font-text-index-program;
+}
+
+.program__catalog {
+  @include font-text-result;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}

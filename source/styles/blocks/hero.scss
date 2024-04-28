@@ -1,0 +1,23 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__title {
+  @include font-text-index-title;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.hero__text {
+  @include font-text-index-title;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  @include font-text-cards;
+  color: #ffffff;
+  text-decoration: none;
+}
