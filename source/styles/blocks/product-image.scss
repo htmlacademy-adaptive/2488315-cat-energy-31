@@ -1,4 +1,6 @@
 .product-image__title {
-  @include font-text-cards;
-  text-decoration: none;
-}
+  @include font-oswald (16px, 20px, $color-text, $font-second, $font-style);
+  text-transform: uppercase;
+  }
+
+.product-image__link {text-decoration: none;}

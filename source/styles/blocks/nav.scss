@@ -1,0 +1,7 @@
+.nav__list {
+  @include list;
+}
+
+.nav__link {
+  @include link;
+}

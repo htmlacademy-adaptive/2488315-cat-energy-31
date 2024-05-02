@@ -3,21 +3,14 @@
 }
 
 .hero__title {
-  @include font-text-index-title;
-  line-height: 36px;
-  color: #ffffff;
+  @include font-oswald (36px, 36px, #ffffff, $font-second, $font-style);
+color:#ffffff;
 }
-
 .hero__text {
-  @include font-text-index-title;
-  font-size: 14px;
-  line-height: 14px;
-  color: #ffffff;
+  @include font-oswald (14px, 14px, #ffffff, $font-second, $font-style);
   text-transform: uppercase;
+  color:#ffffff;
 }
-
 .hero-button {
-  @include font-text-cards;
-  color: #ffffff;
-  text-decoration: none;
+  padding: 10px 63px;
 }

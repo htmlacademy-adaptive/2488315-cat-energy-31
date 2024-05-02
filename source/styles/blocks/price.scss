@@ -1,11 +1,4 @@
-.price__key {
-  @include font-text-result;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.price__value {
-  @include font-text-result;
-  font-size: 14px;
-  line-height: 20px;
+.price {
+  @include font-oswald (14px, 20px, $color-text, $font-second, $font-style);
+  text-transform: uppercase;
 }

@@ -1,82 +1,36 @@
-@mixin font-text {
-  font-family: "Lato", "Ariel", sans-serif;
-  font-style: normal;
+@mixin font ($font-size, $line-height, $color, $font-family, $font-style) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  margin: 0;
+  font-style: normal;
+  font-display: swap;
 }
 
-@mixin font-text-catalog-products {
-  font-family: "Lato", "Ariel", sans-serif;
-  font-style: normal;
+@mixin font-oswald ($font-size, $line-height, $color, $font-family, $font-style) {
+  font-family: $font-second;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-text;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
-  margin: 0;
+  font-style: normal;
+  font-display: swap;
 }
 
-@mixin font-text-catalog-additionals {
-  font-family: "Lato", "Ariel", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
+@mixin list {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
-@mixin font-text-catalog {
-  font-family: "Lato", "Ariel", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #444444;
-  margin: 0;
-}
-
-@mixin font-text-index-title {
-  font-family: "Oswald", "Ariel", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-  margin: 0;
-}
-
-@mixin font-text-index-program {
-  font-family: "Oswald", "Ariel", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-@mixin font-text-cards {
-  font-family: "Oswald", "Ariel", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-@mixin font-text-result {
-  font-family: "Oswald", "Ariel", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
+@mixin link {
+  list-style-type: none;
+  color:#000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-transform: uppercase;
-  margin: 0;
+  text-decoration: none;
 }
+

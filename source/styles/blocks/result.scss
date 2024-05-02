@@ -1,7 +1,7 @@
 .result__key {
-  @include font-text-result;
+  @include font-oswald (24px, 24px, $color-text, $font-second, $font-style);
+  text-transform: uppercase;
 }
 
-.result__value {
-  @include font-text;
-}
+.result__value{
+  @include font (12px, 12px, $color, $font-family, $font-style);}

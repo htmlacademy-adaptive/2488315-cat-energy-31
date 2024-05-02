@@ -1,0 +1,18 @@
+.button{
+  @include font-oswald (16px, 20px, #ffffff, $font-second, $font-style);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  background-color: #68B738;
+  color:#ffffff;
+}
+
+.button__order {
+  padding: 10px 109px;
+
+}
+.button__order--show {
+  background-color: #f2f2f2;
+  color: #444444;
+  padding: 10px 95px;
+}

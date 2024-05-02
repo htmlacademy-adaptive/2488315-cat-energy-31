@@ -1,7 +1,7 @@
 .example__title {
-  @include font-text-index-title;
+  @include font-oswald (36px, 40px, $color-text, $font-second, $font-style);
 }
 
+
 .example__text {
-  @include font-text;
-}
+  @include font (14px, 18px, $color, $font-family, $font-style);}
