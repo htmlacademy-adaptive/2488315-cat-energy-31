@@ -1,7 +1,23 @@
-.example__title {
-  @include font-oswald (36px, 40px, $color-text, $font-second, $font-style);
+.example {
+  background-color: #f2f2f2;
+  padding: 25px 20px 40px;
 }
 
+.example__title {
+  @include font (36px, 40px, $color-text, $font-second);
+  margin: 0;
+  padding-bottom: 20px;
+}
 
 .example__text {
-  @include font (14px, 18px, $color, $font-family, $font-style);}
+  @include font (14px, 18px, $color, $font-prime);
+  padding: 20px;
+  margin: 0;
+}
+
+.example__list {
+display: flex;
+flex-wrap: wrap;
+margin: 0;
+gap: 32px;
+}

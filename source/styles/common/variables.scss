@@ -1,10 +1,12 @@
 /* здесь используйте глобальные переменные */
-
-$font-family: "Lato", "Arial", sans-serif;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$font-prime: "Lato", "Arial", sans-serif;
+$font-second: "Oswald", "Arial", sans-serif;
 $font-style: normal;
 $font-weight: 400;
 $color: #444444;
-
-$font-second: "Oswald", "Arial", sans-serif;
 $color-text:#000000;
-
+$bg-color: rgba(104, 183, 56, 0.85);
+$basic-color: #68b738;
+$basic-padding: 20px;

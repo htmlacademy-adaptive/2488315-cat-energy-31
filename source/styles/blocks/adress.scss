@@ -1,8 +1,17 @@
-.adress__partnership {
-  @include font-oswald (14px, 20px, $color-text, $font-second, $font-style);
-  text-transform: uppercase;
+.adress {
+  padding: 26px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
+.adress__partnership {
+  @include font (14px, 20px, $color-text, $font-second);
+  text-transform: uppercase;
+  width: 50%;
+}
 
-.adress__text{
-  @include font (14px, 20px, $color, $font-family, $font-style);}
+.adress__text {
+  @include font (14px, 20px, $color, $font-prime);
+  width: 50%;
+}

@@ -1,0 +1,20 @@
+.header__wrapper {
+  display: flex;
+  padding: 20px 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__toggle {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#burger");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+
+  /*&--close {
+    background-image: url("../../icons/stack.svg#icon-close");
+  }*/
+}

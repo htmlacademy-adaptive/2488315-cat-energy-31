@@ -1,7 +1,61 @@
-.advantages__list{
-@include font (14px, 18px, $color, $font-family, $font-style);
-@include list;}
+.advantages {
+  padding: 0 20px 49px 20px;
+}
+
+.advantages__list {
+  @include font (14px, 18px, $color, $font-prime);
+  @include list;
+}
 
 .advantages__title {
-  @include font-oswald (36px, 40px, $color-text, $font-second, $font-style);
+  @include font (36px, 40px, $color-text, $font-second);
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.advantages__item {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  &::before{
+    content:"";
+    display:block;
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $basic-color;
+  }
+
+  &--profit{
+  &::before {
+background-image: url("../../icons/stack.svg#icon-leaf");
+background-size: 25px 28px;
+background-repeat: no-repeat;
+background-position: center;
+}
+}
+&--powder{
+  &::before {
+background-image: url("../../icons/stack.svg#icon-powder");
+background-size: 25px 28px;
+background-repeat: no-repeat;
+background-position: center;
+}
+}
+&--food{
+  &::before {
+background-image: url("../../icons/stack.svg#icon-fork");
+background-size: 25px 28px;
+background-repeat: no-repeat;
+background-position: center;
+}
+}
+&--time{
+  &::before {
+background-image: url("../../icons/stack.svg#icon-clock");
+background-size: 25px 28px;
+background-repeat: no-repeat;
+background-position: center;
+}
+}
 }

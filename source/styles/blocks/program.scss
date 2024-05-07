@@ -1,12 +1,73 @@
-.program__title {
-  @include font-oswald (24px, 37px, $color-text, $font-second, $font-style);
-text-transform: uppercase;}
+.program__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 
+}
+
+.program__image {
+  min-width: 80px;
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $basic-color;
+    display: block;
+    position:relative;
+    top: 24px;
+    left: 21px;
+    }
+}
+
+.program__title {
+  @include font (24px, 37px, $color-text, $font-second);
+  text-transform: uppercase;
+  margin-right: auto;
+
+}
+
+.program--slim {
+ &::after {
+  content:"";
+  display: block;
+  background-image: url("../../icons/stack.svg#icon-cat-sitting");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position: left;
+  width:50px;
+  height:53px;
+  position: absolute;
+  top: 780px;
+  left: 40px;
+  }
+}
+
+.program--pro {
+  &::after {
+   content:"";
+   display: block;
+   background-image: url("../../icons/stack.svg#icon-cat-walking");
+   background-repeat: no-repeat;
+   background-size: 67px 28px;
+   background-position: left;
+   width:67px;
+   height:28px;
+   position: absolute;
+   top: 1080px;
+   left: 30px;
+   }
+  }
 
 .program__text {
-  @include font (14px, 18px, $color, $font-family, $font-style);}
+  margin: 0;
+
+  @include font (14px, 18px, $color, $font-prime);
+  padding: 0 33px 38px 20px;
+}
 
 .program__catalog {
-  @include font-oswald (16px, 16px, $color-text, $font-second, $font-style);
-text-transform: uppercase;
-text-decoration: none;}
+  @include font (16px, 16px, $color-text, $font-second);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 126px 18px 20px;
+}

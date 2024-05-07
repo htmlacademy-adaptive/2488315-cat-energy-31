@@ -1,14 +1,36 @@
-.additionals__title {
-  @include font-oswald(24px, 24px,$color-text, $font-second, $font-style);
-
+.additionals {
+  padding: $basic-padding;
 }
+
+.additionals__title {
+  @include font (24px, 24px,$color-text, $font-second);
+}
+
 .additionals__key {
-  @include font-oswald(16px, 16px, #222222, $font-second, $font-style);
+  @include font (16px, 16px, #222222, $font-second);
   text-transform: uppercase;
 }
+
 .additionals__value {
-  @include font (14px, 14px, $color, $font-family, $font-style);
+  @include font (14px, 14px, $color, $font-prime);
 }
-.additional__text {
-  @include font (16px, 20px, #ffffff, $font-family, $font-style);
+
+.additionals__order {
+  margin: 0 auto;
+  padding: 10px 109px;
+}
+
+.additionals__text {
+  @include font (16px, 20px, #ffffff, $font-prime);
+  background-image:
+    linear-gradient($bg-color 290px, #ffffff 290px),
+    image-set(url("../../images/catalog-background-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/catalog-background-mobile@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover, auto 290px;
+  background-position: 50% 0, 50% 0;
+  background-color: linear-gradient($bg-color 290px, #ffffff 290px);
+  min-height: 290px;
+  padding: 48px 61px 53px 48px;
+  text-align: center;
 }

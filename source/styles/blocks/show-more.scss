@@ -1,9 +1,8 @@
 .show-more__title {
-  @include font-oswald(16px, 20px, #111111, $font-second, $font-style);
+  @include font (16px, 20px, #111111, $font-second);
   text-transform: uppercase;
 }
 
 .show-more__text {
-  @include font (12px, 16px, $color, $font-family, $font-style)
+  @include font (12px, 16px, $color, $font-prime);
 }
-

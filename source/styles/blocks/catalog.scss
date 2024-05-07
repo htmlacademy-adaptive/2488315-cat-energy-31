@@ -1,3 +1,7 @@
+.catalog {
+  padding: $basic-padding;
+}
+
 .catalog__title {
-  @include font-oswald (36px, 36px, $color-text, $font-second, $font-style);
+  @include font (36px, 36px, $color-text, $font-second);
 }

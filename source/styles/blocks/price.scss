@@ -1,4 +1,12 @@
 .price {
-  @include font-oswald (14px, 20px, $color-text, $font-second, $font-style);
+  @include font (14px, 20px, $color-text, $font-second);
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 46px;
+  gap: 5px;
+  margin: 0;
+}
+.price__value {
+  margin: 0;
 }
