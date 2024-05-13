@@ -1,8 +1,32 @@
+.show-more {
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#plus");
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 45%;
+    top: 5px;
+  }
+}
+
 .show-more__title {
   @include font (16px, 20px, #111111, $font-second);
   text-transform: uppercase;
+  word-break: break-word;
+  text-align: center;
+  padding: 58px 0 8px;
+  margin: 0;
 }
 
 .show-more__text {
   @include font (12px, 16px, $color, $font-prime);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 21px;
 }

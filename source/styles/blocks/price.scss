@@ -7,6 +7,22 @@
   gap: 5px;
   margin: 0;
 }
+
 .price__value {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding: 0;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: center;
+    margin-left: auto;
+  }
+
+  .price__value {
+    margin-left: auto;
+  }
 }

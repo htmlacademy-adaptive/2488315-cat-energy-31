@@ -1,3 +1,10 @@
 .product-details {
   @include font (12px, 16px, $color, $font-prime);
+  margin: 0;
+}
+
+.product-details__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

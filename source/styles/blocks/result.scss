@@ -8,9 +8,22 @@
   @include font (24px, 24px, $color-text, $font-second);
   text-transform: uppercase;
   padding: 14px 0 7px;
-  }
+}
 
 .result__value {
   @include font (12px, 12px, $color, $font-prime);
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .result__key {
+    padding: 15px 57px 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__value {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

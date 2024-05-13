@@ -1,5 +1,5 @@
 .advantages {
-  padding: 0 20px 49px 20px;
+  padding: 0 20px 49px;
 }
 
 .advantages__list {
@@ -18,44 +18,80 @@
   gap: 20px;
   padding-bottom: 20px;
 
-  &::before{
-    content:"";
-    display:block;
-  min-width: 60px;
-  min-height: 60px;
-  background-color: $basic-color;
+  &::before {
+    content: "";
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: $basic-color;
   }
 
-  &--profit{
-  &::before {
-background-image: url("../../icons/stack.svg#icon-leaf");
-background-size: 25px 28px;
-background-repeat: no-repeat;
-background-position: center;
+  &--profit {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-leaf");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-powder");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-fork");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-clock");
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
-}
-&--powder{
-  &::before {
-background-image: url("../../icons/stack.svg#icon-powder");
-background-size: 25px 28px;
-background-repeat: no-repeat;
-background-position: center;
-}
-}
-&--food{
-  &::before {
-background-image: url("../../icons/stack.svg#icon-fork");
-background-size: 25px 28px;
-background-repeat: no-repeat;
-background-position: center;
-}
-}
-&--time{
-  &::before {
-background-image: url("../../icons/stack.svg#icon-clock");
-background-size: 25px 28px;
-background-repeat: no-repeat;
-background-position: center;
-}
-}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 25px 30px 0;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-flow: wrap;
+    padding-bottom: 37px;
+    width: 245px;
+    height: 280px;
+    flex-direction: column;
+    gap: 31px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: $basic-color;
+    }
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 668px;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

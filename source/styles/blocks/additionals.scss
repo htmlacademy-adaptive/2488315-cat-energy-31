@@ -2,22 +2,38 @@
   padding: $basic-padding;
 }
 
+.additionals__item {
+  margin: 0;
+}
+
 .additionals__title {
   @include font (24px, 24px,$color-text, $font-second);
+  margin: 0;
+  padding: 5px 0 49px;
 }
 
 .additionals__key {
   @include font (16px, 16px, #222222, $font-second);
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 13px;
+}
+
+.additionals__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
 }
 
 .additionals__value {
   @include font (14px, 14px, $color, $font-prime);
+  margin: 0;
 }
 
 .additionals__order {
   margin: 0 auto;
   padding: 10px 109px;
+  margin-bottom: 31px;
 }
 
 .additionals__text {
@@ -31,6 +47,20 @@
   background-position: 50% 0, 50% 0;
   background-color: linear-gradient($bg-color 290px, #ffffff 290px);
   min-height: 290px;
-  padding: 48px 61px 53px 48px;
+  padding-top: 187px;
   text-align: center;
+  margin: 0;
+  position: relative;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-gift");
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 59px;
+    left: 35%;
+  }
 }

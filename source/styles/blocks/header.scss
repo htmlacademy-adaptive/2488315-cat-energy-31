@@ -1,9 +1,17 @@
 .header__wrapper {
   display: flex;
-  padding: 20px 14px;
-  align-items: center;
   flex-wrap: wrap;
+  padding: 14px 20px;
+  align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding: 25px 34px 65px 30px;
+    justify-content: space-between;
+  }
+}
+
 .header__toggle {
   background-color: #ffffff;
   background-image: url("../../icons/stack.svg#burger");
@@ -14,7 +22,13 @@
   height: 24px;
   margin-left: auto;
 
-  /*&--close {
+  /* &--close {
     background-image: url("../../icons/stack.svg#icon-close");
-  }*/
+  } */
+}
+
+@media (min-width: $tablet-width) {
+  .header__toggle {
+    display: none;
+  }
 }

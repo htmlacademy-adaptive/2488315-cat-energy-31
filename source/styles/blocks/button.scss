@@ -5,4 +5,12 @@
   border: none;
   background-color: $basic-color;
   display: block;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

@@ -15,15 +15,20 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo" href="#">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
-        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
-      </picture>
-      <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи">
-    </a>
-    <nav class="header__nav nav">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
+          <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+        </picture>
+        <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи">
+      </a>
+      <button class="header__toggle header__toggle--close" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="header__nav nav visually-hidden">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
@@ -44,33 +49,43 @@
 
       <ul class="card-list">
         <li class="card-list__item card">
+
           <a class="card__link" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-chicken500-desktop@1x.png 1x, images/card-chicken500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-chicken500-tablet@1x.png 1x, images/card-chicken500-tablet@2x.png 2x">
               <img class="card__image" src="images/card-chicken500-mobile@1x.png" srcset="images/card-chicken500-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом курицы 500грамм">
             </picture>
-
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy PRO 500 г</h2>
-          </a>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">500 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Курица</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">700 ₽</dd>
-          </dl>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy<br> PRO 500 г</h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">500 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Курица</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">700 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
+
         </li>
 
         <li class="card-list__item card">
+
           <a class="card__link" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-chicken1000-desktop@1x.png 1x, images/card-chicken1000-desktop@2x.png 2x">
@@ -78,22 +93,30 @@
               <img class="card__image" src="images/card-chicken1000-mobile@1x.png" srcset="images/card-chicken1000-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом курицы 1000грамм">
             </picture>
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy PRO 1000 г</h2>
-          </a>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy <br> PRO 1000 г</h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">1000 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
 
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">1000 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Курица</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">1000 ₽</dd>
-          </dl>
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Курица</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">1000 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
         </li>
 
@@ -105,23 +128,32 @@
               <img class="card__image" src="images/card-fish500-mobile@1x.png" srcset="images/card-fish500-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом рыбы 500грамм">
             </picture>
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy PRO 500 г
-            </h2>
-          </a>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">500 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Рыба</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">700 ₽</dd>
-          </dl>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy <br>PRO 500 г
+              </h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">500 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Рыба</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">700 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
+
         </li>
         <li class="card-list__item card">
           <a class="card__link" href="#">
@@ -131,23 +163,31 @@
               <img class="card__image" src="images/card-fish1000-mobile@1x.png" srcset="images/card-fish1000-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом рыбы 1000грамм">
             </picture>
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy PRO 1000 г</h2>
-          </a>
-
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">1000 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Рыба</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">1000 ₽</dd>
-          </dl>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy <br> PRO 1000 г</h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">1000 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Рыба</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">1000 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
+
         </li>
         <li class="card-list__item card">
           <a class="card__link" href="#">
@@ -157,22 +197,31 @@
               <img class="card__image" src="images/card-buckwheat500-mobile@1x.png" srcset="images/card-buckwheat500-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом гречки 500грамм">
             </picture>
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy Slim 500 г</h2>
-          </a>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">500 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Гречка</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">400 ₽</dd>
-          </dl>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy<br> Slim 500 г</h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">500 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Гречка</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">400 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
+
         </li>
         <li class="card-list__item card">
           <a class="card__link" href="#">
@@ -182,22 +231,31 @@
               <img class="card__image" src="images/card-buckwheat1000-mobile@1x.png" srcset="images/card-buckwheat1000-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом гречки 1000грамм">
             </picture>
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy Slim 1000 г</h2>
-          </a>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">1000 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Гречка</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">700 ₽</dd>
-          </dl>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy<br> Slim 1000 г</h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">1000 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Гречка</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">700 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
+
         </li>
         <li class="card-list__item card">
           <a class="card__link" href="#">
@@ -206,58 +264,81 @@
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-rice500-tablet@1x.png 1x, images/card-rice500-tablet@2x.png 2x">
               <img class="card__image" src="images/card-rice500-mobile@1x.png" srcset="images/card-rice500-mobile@2x.png 2x" width="140" height="107" alt="Питание со вкусом риса 500 грамм">
             </picture>
-
           </a>
-          <a class="card__link" href="#">
-            <h2 class="card__title">Cat Energy Slim 500</h2>
-          </a>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Масса</dt>
-            <dd class="product-details__value">500 г</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Вкус</dt>
-            <dd class="product-details__value">Рис</dd>
-          </dl>
-          <dl class="card-list__description product-details">
-            <dt class="product-details__key">Цена</dt>
-            <dd class="product-details__value">500 ₽</dd>
-          </dl>
+          <div class="card__wrapper">
+            <a class="card__link" href="#">
+              <h2 class="card__title">Cat Energy <br>Slim 500</h2>
+            </a>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Масса</dt>
+                <dd class="product-details__value">500 г</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Вкус</dt>
+                <dd class="product-details__value">Рис</dd>
+              </div>
+            </dl>
+            <dl class="card-list__description product-details">
+              <div class="product-details__flex">
+                <dt class="product-details__key">Цена</dt>
+                <dd class="product-details__value">500 ₽</dd>
+              </div>
+            </dl>
+          </div>
           <button class="button card__order" type="button">Заказать</button>
+
         </li>
         <li class="card-list__item show-more">
-          <h2 class="show-more__title">Показать еще 100500 товаров</h2>
+          <a class="show-more__item" href="#">
+            <h2 class="show-more__title">Показать еще 100500 товаров</h2>
+          </a>
           <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-          <button class="button card__order--show" type="button">Показать все</button>
+          <button class="button show-more show-more--show" type="button">Показать все</button>
         </li>
       </ul>
     </section>
     <section class="additionals">
       <h2 class="additionals__title">Дополнительные товары</h2>
-      <dl class="additionals__item">
-        <dt class="additionals__key">Сахарозаменитель</dt>
-        <dd class="additionals__value">1 упаковка (100 г)</dd>
-        <dd class="additionals__value">200 ₽</dd>
-      </dl>
-      <button class="button additionals__order" type="button">Заказать</button>
-      <dl class="additionals__item">
-        <dt class="additionals__key">Питьевая вода</dt>
-        <dd class="additionals__value">5 литров</dd>
-        <dd class="additionals__value">50 ₽</dd>
-      </dl>
-      <button class="button additionals__order" type="button">Заказать</button>
-      <dl class="additionals__item">
-        <dt class="additionals__key">Молоко</dt>
-        <dd class="additionals__value">1 литр</dd>
-        <dd class="additionals__value">100 ₽</dd>
-      </dl>
-      <button class="button additionals__order" type="button">Заказать</button>
-      <dl class="additionals__item">
-        <dt class="additionals__key">Витамины</dt>
-        <dd class="additionals__value">1 упаковка (30 г)</dd>
-        <dd class="additionals__value">300 ₽</dd>
-      </dl>
-      <button class="button additionals__order" type="button">Заказать</button>
+      <ul class="additionals__list">
+        <li class="additionals__item">
+          <h3 class="additionals__title">Сахарозаменитель</h3>
+          <dl class="additionals__flex">
+            <dt class="additionals__key">1 упаковка (100 г)</dt>
+            <dd class="additionals__value">200 ₽</dd>
+          </dl>
+
+          <button class="button additionals__order" type="button">Заказать</button>
+        </li>
+        <li class="additionals__item">
+          <h3 class="additionals__title">Питьевая вода</h3>
+          <dl class="additionals__flex">
+            <dt class="additionals__key">5 литров</dt>
+            <dd class="additionals__value">50 ₽</dd>
+          </dl>
+          <button class="button additionals__order" type="button">Заказать</button>
+        </li>
+        <li class="additionals__item">
+          <h3 class="additionals__title">Молоко</h3>
+          <dl class="additionals__flex">
+            <dt class="additionals__value">1 литр</dt>
+            <dd class="additionals__value">100 ₽</dd>
+          </dl>
+
+          <button class="button additionals__order" type="button">Заказать</button>
+        </li>
+        <li class="additionals__item">
+          <h3 class="additionals__key">Витамины</h3>
+          <dl class="additionals__flex">
+            <dt class="additionals__value">1 упаковка (30 г)</dt>
+            <dd class="additionals__value">300 ₽</dd>
+          </dl>
+
+          <button class="button additionals__order" type="button">Заказать</button>
+        </li>
+      </ul>
       <p class="additionals__text">Закажите все <br>
         и получите чехол для <br>
         кота в подарок!</p>
@@ -269,15 +350,14 @@
       <p class="adress__text">ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург</p>
-      <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
-        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-        <img class="map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Месторасположение на карте">
-      </picture>
-
     </section>
-  </main>
+    <picture>
+      <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
+      <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+      <img class="map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Месторасположение на карте">
+    </picture>
 
+  </main>
   <footer class="footer">
     <a class="footer__logo logo" href="#">
       <img class="logo__text" src="#" width="150" height="150" alt="Логотип Компании">
@@ -293,7 +373,6 @@
         <a class="socials__link socials__link--telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
       </li>
     </ul>
-
     <a class="footer__academy footer__academy--link" href="#"><span class="visually-hidden">Логотип разработчика сайта</span></a>
 
   </footer>
