@@ -11,7 +11,7 @@
 
 .example__text {
   @include font (14px, 18px, $color, $font-prime);
-  padding: 20px;
+  padding-bottom: 20px;
   margin: 0;
 }
 

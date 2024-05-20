@@ -14,22 +14,25 @@
 .adress__text {
   @include font (14px, 20px, $color, $font-prime);
   width: 50%;
+  text-align: end;
 }
 
 @media (min-width: $tablet-width) {
   .adress {
     padding: 60px 70px;
+    justify-content: space-between;
   }
 
   .adress__partnership {
     width: 25%;
     font-size: 20px;
     line-height: 26px;
+    margin: 0;
   }
 
   .adress__text {
     width: 25%;
-    margin-left: auto;
+    margin: 0;
     text-align: right;
   }
 }
