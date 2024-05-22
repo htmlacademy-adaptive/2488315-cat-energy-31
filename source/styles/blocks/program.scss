@@ -138,3 +138,44 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 0;
+  }
+
+  .program__title {
+    padding: 77px 0 73px 214px;
+  }
+
+  .program::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program--slim::after {
+    width: 70px;
+    height: 97px;
+    background-size: 70px 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .program--pro::after {
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
+    top: 47px;
+    left: 33px;
+  }
+
+  .program__text {
+    padding: 0 20px 23px 52px;
+  }
+
+  .program__catalog {
+    padding-left: 52px;
+  }
+}

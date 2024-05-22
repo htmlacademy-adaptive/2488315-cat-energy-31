@@ -63,13 +63,40 @@
 
 @media (min-width: $tablet-width) {
   .hero-button {
-    position: absolute;
-    width: 244px;
-    height: 54px;
+    max-width: 244px;
     content: "";
-    top: 230px;
-    left: 120px;
+    transform: translate(120px, -570px);
     padding: 14px 26px;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero::before {
+    background-image: linear-gradient(90deg, #ffffff 50%, $bg-color 50%);
+    min-height: 694px;
+    content: "";
+    display: block;
+    width: 100%;
+    top: -200px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .hero__title {
+    padding: 110px 0 40px 190px;
+  }
+
+  .hero__text {
+    padding: 0 0 52px 190px;
+    margin: 0;
+  }
+
+  .hero__image {
+    transform: translate(57px, -345px);
+  }
+
+  .hero-button {
+    transform: translate(190px, -486px);
   }
 }

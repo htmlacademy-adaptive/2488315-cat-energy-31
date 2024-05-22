@@ -17,3 +17,19 @@
   background-color: #f2f2f2;
   margin-bottom: 20px;
 }
+
+@media (min-width: $desktop-width) {
+  .offers {
+    padding: 82px 110px 71px;
+  }
+
+  .offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .offers__item {
+    width: 580px;
+  }
+}

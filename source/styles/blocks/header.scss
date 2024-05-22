@@ -11,3 +11,9 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    padding: 55px 110px 29px;
+  }
+}

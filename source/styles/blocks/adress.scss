@@ -36,3 +36,20 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .adress {
+    padding: 60px 80px;
+    width: 565px;
+    gap: 87px;
+    position: relative;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+  }
+
+  .adress__partnership {
+    width: 45%;
+  }
+}

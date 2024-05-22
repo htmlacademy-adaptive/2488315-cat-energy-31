@@ -1,1 +1,31 @@
-//
+.compare {
+  display: grid;
+  width: 280px;
+  height: 256px;
+  grid-template-columns: 140px auto 140px;
+}
+
+.compare__image {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.compare__image--fat {
+  object-position: left;
+}
+
+.compare__image--slim {
+  object-position: left;
+}
+
+@media (min-width: $tablet-width) {
+  .compare {
+    width: 560px;
+    height: 512px;
+    display: grid;
+    grid-template-columns: 280px auto 280px;
+    margin: 0 auto;
+  }
+}

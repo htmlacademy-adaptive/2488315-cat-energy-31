@@ -65,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 25px 109px 0 30px;
+    padding: 25px 109px 47px 30px;
     counter-reset: number;
   }
 
@@ -108,5 +108,21 @@
     font-size: 16px;
     line-height: 24px;
     counter-reset: number;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-left: 110px;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .additionals__list {
+    gap: 76px;
+    justify-content: flex-start;
   }
 }

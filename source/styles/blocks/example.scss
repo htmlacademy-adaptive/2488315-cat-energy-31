@@ -24,7 +24,9 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 35px 30px 40px;
+    padding: 45px 30px 40px;
+    background-image: linear-gradient(#ffffff 619px, #f2f2f2 468px);
+    border-top: #e6e6e6 solid 1px;
   }
 
   .example__title {
@@ -42,10 +44,40 @@
   .example__flex {
     display: flex;
     flex-wrap: wrap;
-    padding: 55px 0 99px;
+    padding: 55px 0 116px;
   }
 
   .example__list {
     gap: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    border: none;
+    background-image: linear-gradient(#ffffff 160px, #f2f2f2 68px);
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .example__title {
+    padding: 12px 0 146px 110px;
+  }
+
+  .example__text {
+    padding: 0 150px 69px 110px;
+  }
+
+  .example__flex {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 436px;
+    padding: 0;
+  }
+
+  .example__list {
+    padding-left: 110px;
+    min-width: 500px;
   }
 }

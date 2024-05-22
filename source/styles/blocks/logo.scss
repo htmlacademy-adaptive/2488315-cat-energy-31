@@ -11,3 +11,10 @@
     gap: 13px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo__text {
+    width: 128px;
+    height: 24px;
+  }
+}
