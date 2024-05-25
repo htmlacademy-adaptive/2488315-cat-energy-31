@@ -2,6 +2,14 @@
   padding: $basic-padding;
 }
 
+.offers__item {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+
 @media (min-width: $tablet-width) {
   .offers {
     padding: 0 30px;
@@ -12,11 +20,6 @@
   @include list;
 }
 
-.offers__item {
-  padding-bottom: 20px;
-  background-color: #f2f2f2;
-  margin-bottom: 20px;
-}
 
 @media (min-width: $desktop-width) {
   .offers {
@@ -26,7 +29,7 @@
   .offers__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 60px;
   }
 
   .offers__item {

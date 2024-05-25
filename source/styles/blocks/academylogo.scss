@@ -1,0 +1,16 @@
+.academylogo {
+  display: block;
+
+  ::after {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#logo-academy");
+    width: 27px;
+    height: 34px;
+    background-color: #444444;
+  }
+
+  &:hover {
+    background-color: $basic-color;
+  }
+}

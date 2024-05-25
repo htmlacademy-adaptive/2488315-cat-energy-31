@@ -2,7 +2,8 @@
   background-image:
     linear-gradient($bg-color 302px, #ffffff 302px),
     image-set(url("../../images/index-background-mobile@1x.jpg") type("image/jpg") 1x,
-    url("../../images/index-background-mobile@2x.jpg") type("image/jpg") 2x);
+    url("../../images/index-background-mobile@2x.jpg") type("image/jpg") 2x),
+    linear-gradient(to right, rgba(78, 78, 83), rgba(67, 66, 71) 50%);
   background-repeat: no-repeat;
   background-size: cover, auto 302px;
   background-position: 50% 0, 50% 0;
@@ -72,6 +73,7 @@
 }
 
 @media (min-width: $desktop-width) {
+  /*
   .hero::before {
     background-image: linear-gradient(90deg, #ffffff 50%, $bg-color 50%);
     min-height: 694px;
@@ -81,15 +83,17 @@
     top: -200px;
     position: absolute;
     z-index: -1;
-  }
+  } */
 
   .hero__title {
     padding: 110px 0 40px 190px;
+    width: 40vw;
   }
 
   .hero__text {
     padding: 0 0 52px 190px;
     margin: 0;
+    width: 40vw;
   }
 
   .hero__image {

@@ -24,10 +24,10 @@
         </picture>
         <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи">
       </a>
-      <nav class="header__nav nav nav--closed nav--nojs">
-        <button class="nav__toggle nav__toggle--closed" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link--current" href="#">Главная</a>
@@ -114,6 +114,9 @@
           <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
           <img class="compare__image compare__image--fat" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Котик упитанный">
         </picture>
+        <span class="compare__button">
+          <span class="visually-hidden">Посмотреть все</span>
+        </span>
         <picture>
           <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
           <img class="compare__image compare__image--slim" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Котик стройный">
@@ -155,7 +158,7 @@
         <a class="socials__link socials__link--telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
       </li>
     </ul>
-    <a class="footer__academy footer__academy--link" href="#">HTML Academy
+    <a class="footer__academy footer__academy--link academylogo" href="#">HTML Academy
       <span class="visually-hidden">Логотип разработчика сайта</span></a>
   </footer>
 </body>

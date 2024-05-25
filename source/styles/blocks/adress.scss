@@ -9,6 +9,7 @@
   @include font (14px, 20px, $color-text, $font-second);
   text-transform: uppercase;
   width: 50%;
+  word-break: break-word;
 }
 
 .adress__text {

@@ -26,13 +26,18 @@
   margin: 0 auto;
 }
 
-.footer__academy--link::after {
-  content: "";
-  display: block;
-  mask-image: url("../../icons/stack.svg#logo-academy");
-  width: 27px;
-  height: 34px;
-  background-color: #444444;
+.footer__academy--link {
+  &:hover {
+    color: rgba(68, 68, 68, 0.6);
+  }
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.6);
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

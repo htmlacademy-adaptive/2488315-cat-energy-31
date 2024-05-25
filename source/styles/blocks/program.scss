@@ -19,7 +19,7 @@
   @include font (24px, 37px, $color-text, $font-second);
   text-transform: uppercase;
   margin: 0;
-  padding: 30px 0 29px 90px;
+  padding: 0 15px 0 90px;
 }
 
 .program--slim {
@@ -58,14 +58,47 @@
   margin: 0;
 
   @include font (14px, 18px, $color, $font-prime);
-  padding: 0 33px 38px 20px;
+  padding: 29px 33px 23px 20px;
 }
 
 .program__catalog {
   @include font (16px, 16px, $color-text, $font-second);
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 126px 18px 20px;
+  padding: 15px 16px 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 20px;
+  border-top: #d9d9d9 solid 1px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 12px;
+    background-color: #000000;
+    mask-image: url("../../icons/stack.svg#icon-arrow");
+    mask-repeat: no-repeat;
+    mask-position: left center;
+    mask-size: 24px 12px;
+  }
+
+  &:hover {
+    &::after {
+      transform: scaleX(1.33);
+      transform-origin: left center;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      transform: scaleX(1.33);
+      transform-origin: left center;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -136,6 +169,7 @@
     padding: 10px 0  0;
     font-size: 20px;
     line-height: 30px;
+    border: none;
   }
 }
 
@@ -177,5 +211,6 @@
 
   .program__catalog {
     padding-left: 52px;
+    margin: 0;
   }
 }

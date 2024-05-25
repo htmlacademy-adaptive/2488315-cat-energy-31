@@ -1,9 +1,7 @@
-.catalog {
-  padding: 0 20px;
-}
-
 .catalog__title {
   @include font (36px, 36px, $color-text, $font-second);
   margin: 0;
-  padding: 27px 0 41px;
+  padding: 27px 20px 41px;
+  border-top: #ebebeb solid 1px;
+  border-bottom: #ebebeb solid 1px;
 }
