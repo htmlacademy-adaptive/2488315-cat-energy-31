@@ -8,3 +8,27 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .product-details__flex {
+    font-size: 16px;
+    line-height: 20px;
+    width: 250px;
+    padding: 5px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-details__flex {
+    width: 169px;
+  }
+
+  .product-details__key {
+    max-width: 80px;
+  }
+
+  .product-details__value {
+    max-width: 60px;
+  }
+}

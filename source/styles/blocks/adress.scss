@@ -1,8 +1,9 @@
-.adress {
+.adress__inner {
   padding: 26px 20px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 .adress__partnership {
@@ -19,7 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .adress {
+  .adress__inner {
     padding: 60px 70px;
     justify-content: space-between;
   }
@@ -35,22 +36,31 @@
     width: 25%;
     margin: 0;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .adress {
+  .adress__inner {
     padding: 60px 80px;
     width: 565px;
-    gap: 87px;
-    position: relative;
     background-color: #ffffff;
     top: 95px;
     left: 110px;
     z-index: 2;
+    grid-column: 2/3;
+    grid-row: 2;
   }
 
   .adress__partnership {
     width: 45%;
+  }
+
+  .adress__text {
+    width: 158px;
+    justify-content: flex-start;
   }
 }

@@ -1,5 +1,7 @@
 .additionals {
   padding: $basic-padding;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .additionals__item {
@@ -9,31 +11,54 @@
 .additionals__title {
   @include font (24px, 24px,$color-text, $font-second);
   margin: 0;
-  padding: 5px 0 49px;
+  padding: 25px 0 36px;
+  background-color: #ffffff;
+  width: fit-content;
+  max-width: 85%;
+  position: relative;
+  box-shadow: -40px 0 0 #ffffff, 40px 0 0#ffffff;
+}
+
+.additionals__title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100vw;
+  background-color: $basic-color;
+  position: absolute;
+  top: 45%;
+  left: -50vw;
+  z-index: -1;
+  box-shadow: 100vw 0 0 $basic-color;
+}
+
+.additionals__list {
+  @include list;
 }
 
 .additionals__key {
   @include font (16px, 16px, #222222, $font-second);
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 13px;
+  padding: 13px 0;
+  border-top: 1px solid #cdcdcd;
 }
 
 .additionals__flex {
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
+  margin: 0;
 }
 
 .additionals__value {
-  @include font (14px, 14px, $color, $font-prime);
+  @include font (14px, 20px, $color, $font-prime);
   margin: 0;
 }
 
 .additionals__order {
-  margin: 0 auto;
   padding: 10px 109px;
-  margin-bottom: 31px;
+  margin-bottom: 19px;
 }
 
 .additionals__text {
@@ -45,7 +70,7 @@
   background-repeat: no-repeat;
   background-size: cover, auto 290px;
   background-position: 50% 0, 50% 0;
-  background-color: linear-gradient($bg-color 290px, #ffffff 290px);
+  background-color: $basic-color;
   min-height: 290px;
   padding-top: 187px;
   text-align: center;
@@ -62,5 +87,149 @@
     position: absolute;
     top: 59px;
     left: 35%;
+  }
+}
+
+.additionals__paragraf {
+  padding: 15px 0;
+  border-top: 1px solid #cdcdcd;
+}
+
+@media (min-width: $tablet-width) {
+  .additionals {
+    padding: 20px 30px 70px;
+    max-width: 100%;
+  }
+
+  .additionals__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .additionals__title {
+    padding: 50px 0 80px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 40px;
+  }
+
+  .additionals__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #cdcdcd;
+    padding: 0 38px;
+  }
+
+  .additionals__flex {
+    justify-content: flex-end;
+    gap: 49px;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .additionals__key {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 25px 0;
+    border: none;
+  }
+
+  .additionals__order {
+    grid-column: 1/-1;
+    margin-bottom: 28px;
+  }
+
+  .additionals__paragraf {
+    padding: 0;
+  }
+
+  .additionals__text {
+    background-image:
+      linear-gradient($bg-color 290px, #ffffff 290px),
+      image-set(url("../../images/catalog-background-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../../images/catalog-background-tablet@2x.jpg") type("image/jpg") 2x);
+    padding-left: 421px;
+    padding-top: 71px;
+    min-height: 200px;
+    background-size: contain;
+    border: none;
+    background-color: $bg-color;
+  }
+
+  .additionals__text::before {
+    top: 57px;
+    left: 70px;
+  }
+
+  .additionals__list {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionals {
+    padding: 76px 110px 0;
+  }
+
+  .additionals__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 1500px;
+  }
+
+  .additionals__item {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+    justify-content: flex-end;
+    border-left: none;
+    border-right: none;
+  }
+
+  .additionals__key {
+    margin-right: auto;
+  }
+
+  .additionals__list {
+    margin: 0;
+    min-width: 890px;
+  }
+
+  .additionals__flex {
+    width: 285px;
+    justify-content: space-between;
+  }
+
+  .additionals__value {
+    font-size: 16px;
+  }
+
+  .additionals__order {
+    margin: 0;
+    align-self: center;
+    padding: 10px 90px;
+  }
+
+  .additionals__paragraf {
+    width: 245px;
+  }
+
+  .additionals__text {
+    background-image:
+      linear-gradient($bg-color, $bg-color),
+      image-set(url("../../images/catalog-background-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/catalog-background-desktop@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(#ffffff 50%, #403e41 50%);
+    background-size: contain;
+    padding: 185px 40px 40px;
+    min-height: 288px;
+    background-color: $bg-color;
+  }
+
+  .additionals__text::before {
+    top: 57px;
   }
 }

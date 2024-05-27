@@ -5,3 +5,18 @@
   border-top: #ebebeb solid 1px;
   border-bottom: #ebebeb solid 1px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    padding: 0 30px 84px;
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding-left: 110px;
+  }
+}

@@ -1,16 +1,16 @@
-.academylogo {
+.academylogo::after {
+  content: "";
   display: block;
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  width: 27px;
+  height: 34px;
+  background-color: #444444;
+}
 
-  ::after {
-    content: "";
-    display: block;
-    mask-image: url("../../icons/stack.svg#logo-academy");
-    width: 27px;
-    height: 34px;
-    background-color: #444444;
-  }
+.academylogo:hover::after {
+  background-color: $basic-color;
+}
 
-  &:hover {
-    background-color: $basic-color;
-  }
+.academylogo:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
 }

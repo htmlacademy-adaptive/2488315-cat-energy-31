@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .header__wrapper {
-    padding: 25px 34px 65px 30px;
+    padding: 25px 30px 65px;
     justify-content: space-between;
   }
 
@@ -46,7 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .header__wrapper {
-    padding: 55px 110px 29px;
+    padding: 55px 110px 74px;
     position: relative;
   }
 }

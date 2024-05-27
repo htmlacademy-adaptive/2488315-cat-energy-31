@@ -73,17 +73,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  /*
-  .hero::before {
-    background-image: linear-gradient(90deg, #ffffff 50%, $bg-color 50%);
-    min-height: 694px;
-    content: "";
-    display: block;
-    width: 100%;
-    top: -200px;
-    position: absolute;
-    z-index: -1;
-  } */
+  .hero {
+    max-height: 550px;
+  }
 
   .hero__title {
     padding: 110px 0 40px 190px;

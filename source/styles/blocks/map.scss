@@ -1,6 +1,7 @@
 @media (min-width: $desktop-width) {
   .map {
     width: 100%;
+    display: block;
   }
 
   .map__image {

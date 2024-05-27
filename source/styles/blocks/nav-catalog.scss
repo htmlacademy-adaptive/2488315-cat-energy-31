@@ -1,0 +1,10 @@
+@media (min-width: $desktop-width) {
+  .nav-catalog {
+    color: $color-text;
+    position: relative;
+
+    &::after {
+      background-color: $basic-color;
+    }
+  }
+}

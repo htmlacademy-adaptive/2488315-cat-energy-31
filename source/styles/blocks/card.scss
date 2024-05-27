@@ -15,10 +15,23 @@
   margin: 0;
   padding-bottom: 15px;
   word-break: break-word;
+  width: 80px;
 }
 
 .card__link {
   text-decoration: none;
+}
+
+.card__link:hover {
+  opacity: 0.6;
+}
+
+.card__link:focus {
+  opacity: 0.6;
+}
+
+.card__link:active {
+  opacity: 0.3;
 }
 
 .card__order {
@@ -33,4 +46,41 @@
   color: #444444;
   padding: 10px 95px;
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    align-items: center;
+    background-image: linear-gradient(#ffffff 16%, #f2f2f2 1px);
+    padding: 0;
+  }
+
+  .card__order {
+    padding: 10px 94px;
+    margin: 17px 0 40px;
+    width: 250px;
+  }
+
+  .card__title {
+    text-align: center;
+    width: 130px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 22px 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 245px;
+  }
+
+  .card__order {
+    width: 169px;
+    padding: 10px 4px;
+  }
 }

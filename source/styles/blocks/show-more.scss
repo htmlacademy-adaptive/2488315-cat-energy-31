@@ -1,6 +1,8 @@
 .show-more {
   text-decoration: none;
   position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ebebeb;
 
   &::before {
     background-image: url("../../icons/stack.svg#plus");
@@ -13,6 +15,10 @@
     left: 45%;
     top: 25px;
   }
+}
+
+.show-more__item {
+  text-decoration: none;
 }
 
 .show-more__title {
@@ -36,4 +42,68 @@
   padding: 10px 95px;
   background-color: #f2f2f2;
   color: #444444;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #444444;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding-top: 150px;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid #f2f2f2;
+    margin-top: 85px;
+    width: 324px;
+  }
+
+  .show-more__title {
+    padding: 0 93px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .show-more__text {
+    padding: 23px 70px 95px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .show-more__button--show {
+    padding: 10px 60px;
+    width: 250px;
+  }
+
+  .show-more::before {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    left: 40%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+  }
+
+  .show-more__title {
+    padding: 0 33px;
+  }
+
+  .show-more__text {
+    padding: 23px 10px 95px;
+  }
+
+  .show-more__button--show {
+    padding: 10px 3px;
+    width: 169px;
+  }
 }

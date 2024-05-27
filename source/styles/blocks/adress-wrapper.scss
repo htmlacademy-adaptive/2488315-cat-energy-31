@@ -1,0 +1,18 @@
+.adress-wrapper {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .adress-wrapper {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adress-wrapper {
+    display: grid;
+    grid-template-columns: 110px 565px 500px 110px;
+    grid-template-rows: 96px 200px 106px;
+    background-color: #f2f2f2;
+  }
+}
