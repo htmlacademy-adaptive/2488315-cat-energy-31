@@ -26,7 +26,7 @@
   text-transform: uppercase;
   word-break: break-word;
   text-align: center;
-  padding: 78px 0 8px;
+  padding: 78px 10px 8px;
   margin: 0;
   text-decoration: none;
 }
@@ -35,16 +35,16 @@
   @include font (12px, 16px, $color, $font-prime);
   text-align: center;
   margin: 0;
-  padding-bottom: 21px;
+  padding: 0 10px 21px;
 }
 
 .show-more__button--show {
-  padding: 10px 95px;
   background-color: #f2f2f2;
   color: #444444;
-  margin: 0 auto;
+  margin: 0 20px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ebebeb;
   }
 
@@ -77,8 +77,8 @@
   }
 
   .show-more__button--show {
-    padding: 10px 60px;
     width: 250px;
+    margin: 0 37px;
   }
 
   .show-more::before {
@@ -103,7 +103,7 @@
   }
 
   .show-more__button--show {
-    padding: 10px 3px;
+    padding: 10px;
     width: 169px;
   }
 }

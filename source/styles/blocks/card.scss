@@ -36,7 +36,6 @@
 
 .card__order {
   margin: 0 auto;
-  padding: 10px 109px;
   grid-column: 1/-1;
 }
 
@@ -54,12 +53,11 @@
     flex-direction: column;
     width: 324px;
     align-items: center;
-    background-image: linear-gradient(#ffffff 16%, #f2f2f2 1px);
+    background-image: linear-gradient(#ffffff 81px, #f2f2f2 1px);
     padding: 0;
   }
 
   .card__order {
-    padding: 10px 94px;
     margin: 17px 0 40px;
     width: 250px;
   }

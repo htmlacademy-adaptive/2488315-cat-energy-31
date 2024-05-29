@@ -11,8 +11,8 @@
 @media (min-width: $desktop-width) {
   .adress-wrapper {
     display: grid;
-    grid-template-columns: 110px 565px 500px 110px;
-    grid-template-rows: 96px 200px 106px;
+    grid-template-columns: auto 565px 655px auto;
+    grid-template-rows: 96px auto 110px;
     background-color: #f2f2f2;
   }
 }

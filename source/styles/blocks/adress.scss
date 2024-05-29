@@ -51,8 +51,12 @@
     top: 95px;
     left: 110px;
     z-index: 2;
-    grid-column: 2/3;
-    grid-row: 2;
+    grid-column: 2/2;
+    grid-row: 3/2;
+  }
+
+  .adress__image {
+    grid-column: 1/-1;
   }
 
   .adress__partnership {

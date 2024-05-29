@@ -5,9 +5,14 @@
   width: 27px;
   height: 34px;
   background-color: #444444;
+  flex-shrink: 0;
 }
 
 .academylogo:hover::after {
+  background-color: $basic-color;
+}
+
+.academylogo:focus::after {
   background-color: $basic-color;
 }
 

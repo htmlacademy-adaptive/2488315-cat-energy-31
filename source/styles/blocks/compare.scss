@@ -13,14 +13,39 @@
   height: 100%;
 }
 
+.compare__button {
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  position: relative;
+}
+
 .compare__button::before {
   content: "";
   display: block;
-  mask-image: ("../../icons/stack.svg#slider");
-  mask-size: auto;
-  mask-repeat: no-repeat;
-  width: 4px;
-  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+.compare__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#slider");
+  background-color: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .compare__image--fat {

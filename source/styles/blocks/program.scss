@@ -69,7 +69,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  margin: 0 20px;
+  margin: 0;
   border-top: #d9d9d9 solid 1px;
 
   &::after {
@@ -166,10 +166,12 @@
   }
 
   .program__catalog {
-    padding: 10px 0  0;
     font-size: 20px;
     line-height: 30px;
     border: none;
+    padding: 0 0 20px;
+    width: 600px;
+    margin: 0;
   }
 }
 
@@ -179,7 +181,7 @@
   }
 
   .program__title {
-    padding: 77px 0 73px 214px;
+    padding: 77px 50px 73px 214px;
   }
 
   .program::before {
@@ -210,7 +212,8 @@
   }
 
   .program__catalog {
-    padding-left: 52px;
     margin: 0;
+    padding: 0 51px 10px;
+    width: 100%;
   }
 }

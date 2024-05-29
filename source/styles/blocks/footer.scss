@@ -19,7 +19,6 @@
   text-transform: none;
   display: flex;
   padding: 20px 20px 40px;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   max-width: 450px;
@@ -46,15 +45,18 @@
     flex-wrap: wrap;
     padding: 55px 30px;
     align-items: center;
+    justify-content: space-between;
   }
 
   .footer__logo {
-    padding: 0 160px 0 0;
+    width: 128px;
+    align-self: center;
   }
 
   .footer__academy {
     margin: 0;
     gap: 23px;
+    max-width: 200px;
   }
 
   .footer__academy--link {
@@ -64,6 +66,7 @@
   .footer__socials {
     margin: 0;
     padding: 0;
+    max-width: 180px;
   }
 }
 
