@@ -1,0 +1,38 @@
+.product-details {
+  @include font (12px, 16px, $color, $font-prime);
+  margin: 0;
+}
+
+.product-details__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-details__value {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product-details__flex {
+    font-size: 16px;
+    line-height: 20px;
+    width: 250px;
+    padding: 5px 0 6px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-details__flex {
+    width: 169px;
+  }
+
+  .product-details__key {
+    max-width: 80px;
+  }
+
+  .product-details__value {
+    max-width: 60px;
+  }
+}

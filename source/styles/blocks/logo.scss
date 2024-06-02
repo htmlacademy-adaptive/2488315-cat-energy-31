@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 56px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    gap: 13px;
+    align-self: flex-start;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text {
+    width: 128px;
+    height: 24px;
+  }
+}

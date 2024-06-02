@@ -1,0 +1,40 @@
+.price {
+  @include font (14px, 20px, $color-text, $font-second);
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 46px;
+  gap: 5px;
+  margin: 0;
+  justify-content: center;
+}
+
+.price__value {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding: 0;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: center;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .price__value {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    margin: 0;
+    padding: 55px 0 75px;
+    flex-direction: row;
+    align-self: first baseline;
+    gap: 63px;
+  }
+}

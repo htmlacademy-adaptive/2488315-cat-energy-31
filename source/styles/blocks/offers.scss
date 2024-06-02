@@ -1,0 +1,55 @@
+.offers {
+  padding: 20px 20px 3px;
+}
+
+.offers__list {
+  @include list;
+}
+
+.offers__item {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .offers {
+    padding: 0 30px;
+  }
+
+  .offers__wrapper {
+    margin-top: -50px;
+  }
+
+  .offers__list {
+    @include list;
+  }
+
+  .offers__item {
+    margin-bottom: 29px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .offers {
+    padding: 140px 0 40px;
+  }
+
+  .offers__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .offers__item {
+    width: 580px;
+  }
+}

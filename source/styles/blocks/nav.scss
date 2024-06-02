@@ -1,0 +1,104 @@
+.nav__list {
+  @include list;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 280px;
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .nav__item {
+    padding-top: 20px 20px 24px;
+  }
+
+  .nav__link {
+    @include link;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #3e3e3e;
+    }
+
+    &:focus {
+      color: #3e3e3e;
+    }
+
+    &:active {
+      color: #6b6b6b;
+    }
+  }
+}
+
+/* @media (max-width: $mobile-width-only) {
+  .nav--closed {
+    display: none;
+  }
+} */
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px 30px;
+    width: 60vw;
+    margin-left: 10px;
+  }
+
+  .nav__link {
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 3px;
+
+    @include font (18px, 24px, $color-text, $font-second);
+    text-transform: uppercase;
+  }
+
+  .nav__link:hover:not(.nav__link--current) {
+    opacity: 0.4;
+  }
+
+  .nav__link:focus:not(.nav__link--current) {
+    opacity: 0.4;
+  }
+
+  .nav__link:active:not(.nav__link--current) {
+    opacity: 0.2;
+  }
+}
+
+.nav__link--current {
+  position: relative;
+  padding-right: 7px;
+}
+
+.nav__link--current::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 2px;
+  background-color: $basic-color;
+  left: 0;
+  bottom: -8px;
+}
+
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    width: 40vw;
+    gap: 10px 28px;
+  }
+
+  .nav__link {
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .nav__link--current::after {
+    background-color: #ffffff;
+  }
+}

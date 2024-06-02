@@ -1,0 +1,23 @@
+.card-list {
+  @include list;
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 60px;
+    padding: 0;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-list {
+    gap: 67px 80px;
+    padding: 0;
+    margin-left: 110px;
+    width: 1220px;
+  }
+}

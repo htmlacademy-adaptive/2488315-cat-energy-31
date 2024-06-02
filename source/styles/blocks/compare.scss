@@ -1,0 +1,107 @@
+.compare {
+  display: grid;
+  width: 280px;
+  height: 256px;
+  grid-template-columns: 140px auto 140px;
+  margin: 0 auto;
+}
+
+.compare__image {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.compare__button {
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  position: relative;
+  padding: 0;
+  border-radius: 2px;
+  border: none;
+}
+
+.compare__button::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+.compare__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#slider");
+  background-color: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.compare__button:hover,
+.compare__button:focus-visible {
+  background-color: $basic-color;
+}
+
+.compare__button:hover::before,
+.compare__button:focus-visible::before {
+  border-color: $basic-color;
+}
+
+.compare__button:hover::after,
+.compare__button:focus-visible::after {
+  background-color: $basic-color;
+}
+
+.compare__button:active {
+  opacity: 60%;
+}
+
+.compare__button:active::before {
+  opacity: 60%;
+}
+
+.compare__button:active::after {
+  opacity: 60%;
+}
+
+.compare__button:disabled {
+  opacity: 0.3;
+}
+
+.compare__image--fat {
+  object-position: left;
+}
+
+.compare__image--slim {
+  object-position: right;
+}
+
+@media (min-width: $tablet-width) {
+  .compare {
+    width: 560px;
+    height: 512px;
+    display: grid;
+    grid-template-columns: 280px auto 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .compare {
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,22 @@
+.catalog__title {
+  @include font (36px, 36px, $color-text, $font-second);
+  margin: 0;
+  padding: 27px 20px 41px;
+  border-top: #ebebeb solid 1px;
+  border-bottom: #ebebeb solid 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    padding: 0 30px 95px;
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding-left: 110px;
+  }
+}
