@@ -1,0 +1,17 @@
+.catalog-container__subscribe {
+  padding: 40px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-container__subscribe {
+    padding: 80px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-container__subscribe {
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+  }
+}

@@ -6,7 +6,7 @@
 .example__title {
   @include font (36px, 40px, $color-text, $font-second);
   margin: 0;
-  padding-bottom: 20px;
+  padding: 3px 0 40px;
 }
 
 .example__text {
@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 45px 30px 40px;
+    padding: 45px 30px 100px;
     background-image: linear-gradient(#ffffff 619px, #f2f2f2 468px);
     border-top: #e6e6e6 solid 1px;
   }
@@ -33,7 +33,7 @@
   .example__title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 58px;
   }
 
   .example__text {
@@ -45,7 +45,7 @@
   .example__flex {
     display: flex;
     flex-wrap: wrap;
-    padding: 55px 0 116px;
+    padding: 55px 0 100px;
   }
 
   .example__list {
@@ -56,18 +56,24 @@
 @media (min-width: $desktop-width) {
   .example {
     border: none;
-    background-image: linear-gradient(#ffffff 160px, #f2f2f2 68px);
+    background-image: linear-gradient(#ffffff 150px, #f2f2f2 68px);
     padding: 0;
-    display: grid;
+    display: flex;
     grid-template-columns: 50% 50%;
   }
 
+  .example__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+  }
+
   .example__title {
-    padding: 12px 0 146px 110px;
+    padding: 12px 0 146px;
   }
 
   .example__text {
-    padding: 0 150px 69px 110px;
+    padding: 0 220px 70px 0;
   }
 
   .example__flex {
@@ -78,7 +84,7 @@
   }
 
   .example__list {
-    padding-left: 90px;
     min-width: 500px;
+    justify-content: flex-start;
   }
 }

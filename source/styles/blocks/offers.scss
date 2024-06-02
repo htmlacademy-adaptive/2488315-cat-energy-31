@@ -1,5 +1,9 @@
 .offers {
-  padding: $basic-padding;
+  padding: 20px 20px 3px;
+}
+
+.offers__list {
+  @include list;
 }
 
 .offers__item {
@@ -14,16 +18,29 @@
   .offers {
     padding: 0 30px;
   }
-}
 
-.offers__list {
-  @include list;
+  .offers__wrapper {
+    margin-top: -50px;
+  }
+
+  .offers__list {
+    @include list;
+  }
+
+  .offers__item {
+    margin-bottom: 29px;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
   .offers {
-    padding: 82px 110px 71px;
+    padding: 140px 0 40px;
+  }
+
+  .offers__wrapper {
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .offers__list {

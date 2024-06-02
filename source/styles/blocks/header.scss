@@ -1,7 +1,7 @@
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 14px 20px;
+  padding: 14px 20px 11px;
   align-items: center;
 }
 
@@ -35,8 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .header__wrapper {
-    padding: 25px 30px 65px;
-    justify-content: space-between;
+    padding: 25px 30px 60px;
+    gap: 62px;
   }
 
   .header__toggle {
@@ -46,7 +46,10 @@
 
 @media (min-width: $desktop-width) {
   .header__wrapper {
-    padding: 55px 110px 74px;
+    padding: 55px 0 70px;
     position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }

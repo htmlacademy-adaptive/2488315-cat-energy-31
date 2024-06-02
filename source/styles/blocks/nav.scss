@@ -43,13 +43,15 @@
     flex-flow: wrap;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 10px 33px;
+    gap: 10px 30px;
     width: 60vw;
+    margin-left: 10px;
   }
 
   .nav__link {
     list-style-type: none;
     text-decoration: none;
+    padding-right: 3px;
 
     @include font (18px, 24px, $color-text, $font-second);
     text-transform: uppercase;
@@ -70,12 +72,13 @@
 
 .nav__link--current {
   position: relative;
+  padding-right: 7px;
 }
 
 .nav__link--current::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 2px;
   background-color: $basic-color;
   left: 0;
@@ -86,6 +89,7 @@
 @media (min-width: $desktop-width) {
   .nav__list {
     width: 40vw;
+    gap: 10px 28px;
   }
 
   .nav__link {

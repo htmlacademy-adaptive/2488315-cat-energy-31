@@ -19,6 +19,9 @@
   height: 100%;
   background-color: #666666;
   position: relative;
+  padding: 0;
+  border-radius: 2px;
+  border: none;
 }
 
 .compare__button::before {
@@ -48,6 +51,37 @@
   transform: translate(-50%, -50%);
 }
 
+.compare__button:hover,
+.compare__button:focus-visible {
+  background-color: $basic-color;
+}
+
+.compare__button:hover::before,
+.compare__button:focus-visible::before {
+  border-color: $basic-color;
+}
+
+.compare__button:hover::after,
+.compare__button:focus-visible::after {
+  background-color: $basic-color;
+}
+
+.compare__button:active {
+  opacity: 60%;
+}
+
+.compare__button:active::before {
+  opacity: 60%;
+}
+
+.compare__button:active::after {
+  opacity: 60%;
+}
+
+.compare__button:disabled {
+  opacity: 0.3;
+}
+
 .compare__image--fat {
   object-position: left;
 }
@@ -63,5 +97,11 @@
     display: grid;
     grid-template-columns: 280px auto 280px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .compare {
+    padding-top: 15px;
   }
 }

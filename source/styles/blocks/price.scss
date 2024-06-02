@@ -21,6 +21,7 @@
     line-height: 20px;
     align-self: center;
     margin-left: auto;
+    gap: 10px;
   }
 
   .price__value {
@@ -31,7 +32,7 @@
 @media (min-width: $desktop-width) {
   .price {
     margin: 0;
-    padding: 55px 0 75px 110px;
+    padding: 55px 0 75px;
     flex-direction: row;
     align-self: first baseline;
     gap: 63px;

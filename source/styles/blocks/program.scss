@@ -19,7 +19,7 @@
   @include font (24px, 37px, $color-text, $font-second);
   text-transform: uppercase;
   margin: 0;
-  padding: 0 15px 0 90px;
+  padding: 1px 15px 0 91px;
 }
 
 .program--slim {
@@ -28,10 +28,10 @@
     display: block;
     background-image: url("../../icons/stack.svg#icon-cat-sitting");
     background-repeat: no-repeat;
-    background-size: 50px 53px;
+    background-size: 45px 50px;
     background-position: left;
-    width: 50px;
-    height: 53px;
+    width: 45px;
+    height: 50px;
     position: absolute;
     top: 21px;
     left: 23px;
@@ -65,7 +65,7 @@
   @include font (16px, 16px, $color-text, $font-second);
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 16px 18px 20px;
+  padding: 18px 16px 0 21px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -81,7 +81,7 @@
     mask-image: url("../../icons/stack.svg#icon-arrow");
     mask-repeat: no-repeat;
     mask-position: left center;
-    mask-size: 24px 12px;
+    mask-size: 32px 12px;
   }
 
   &:hover {
@@ -114,7 +114,7 @@
       background-color: $basic-color;
       display: block;
       position: absolute;
-      top: 81px;
+      top: 90px;
       right: 63px;
       left: auto;
     }
@@ -123,13 +123,15 @@
   .program__title {
     font-size: 36px;
     line-height: 36px;
-    padding: 77px 0 24px;
+    padding: 77px 0 21px;
   }
 
   .program__text {
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 55px;
   }
 
   .program--slim {
@@ -172,6 +174,7 @@
     padding: 0 0 20px;
     width: 600px;
     margin: 0;
+    gap: 25px;
   }
 }
 
@@ -181,14 +184,14 @@
   }
 
   .program__title {
-    padding: 77px 50px 73px 214px;
+    padding: 70px 50px 73px 218px;
   }
 
   .program::before {
     width: 100px;
     height: 100px;
-    top: 47px;
-    left: 52px;
+    top: 43px;
+    left: 60px;
   }
 
   .program--slim::after {
@@ -203,17 +206,17 @@
     width: 134px;
     height: 100px;
     background-size: 134px 100px;
-    top: 47px;
-    left: 33px;
+    top: 40px;
+    left: 43px;
   }
 
   .program__text {
-    padding: 0 20px 23px 52px;
+    padding: 0 20px 28px 55px;
   }
 
   .program__catalog {
     margin: 0;
-    padding: 0 51px 10px;
+    padding: 0 51px 10px 55px;
     width: 100%;
   }
 }

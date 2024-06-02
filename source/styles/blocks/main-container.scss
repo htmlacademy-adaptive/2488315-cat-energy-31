@@ -1,1 +1,6 @@
-//
+@media (min-width: $desktop-width) {
+  .main-container__desktop {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}

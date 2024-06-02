@@ -1,5 +1,5 @@
 .additionals {
-  padding: $basic-padding;
+  padding: 0 20px;
   max-width: 360px;
   margin: 0 auto;
 }
@@ -17,14 +17,14 @@
   background-size: cover, auto 290px;
   background-position: 50% 0, 50% 0;
   background-color: $basic-color;
-  padding: 15px 0;
+  padding: 15px 0 0;
   border-top: 1px solid #cdcdcd;
 }
 
 .additionals__title {
   @include font (24px, 24px,$color-text, $font-second);
   margin: 0;
-  padding: 25px 0 36px;
+  padding: 25px 0 32px;
   background-color: #ffffff;
   width: fit-content;
   max-width: 85%;
@@ -39,7 +39,7 @@
   width: 100vw;
   background-color: $basic-color;
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: -50vw;
   z-index: -1;
   box-shadow: 100vw 0 0 $basic-color;
@@ -47,20 +47,21 @@
 
 .additionals__list {
   @include list;
+  padding-bottom: 35px;
 }
 
 .additionals__key {
   @include font (16px, 16px, #222222, $font-second);
   text-transform: uppercase;
   margin: 0;
-  padding: 13px 0;
+  padding: 13px 0 10px;
   border-top: 1px solid #cdcdcd;
 }
 
 .additionals__flex {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   margin: 0;
 }
 
@@ -75,8 +76,8 @@
 
 .additionals__text {
   @include font (16px, 20px, #ffffff, $font-prime);
-  min-height: 290px;
-  padding: 187px 10px 10px;
+  min-height: 275px;
+  padding: 175px 10px 10px;
   text-align: center;
   margin: 0;
   position: relative;
@@ -89,7 +90,7 @@
     height: 80px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 59px;
+    top: 45px;
     left: 35%;
   }
 }
@@ -97,7 +98,7 @@
 
 @media (min-width: $tablet-width) {
   .additionals {
-    padding: 20px 30px 70px;
+    padding: 20px 30px 40px;
     max-width: 100%;
   }
 
@@ -107,9 +108,9 @@
   }
 
   .additionals__title {
-    padding: 50px 0 80px;
-    font-size: 36px;
-    line-height: 36px;
+    padding: 55px 0 80px;
+    font-size: 32px;
+    line-height: 32px;
     margin-left: 40px;
   }
 
@@ -118,32 +119,41 @@
     grid-template-columns: 1fr 1fr;
     border: 1px solid #cdcdcd;
     padding: 0 38px;
+    margin: 0;
+    grid-template-rows: 70px 70px;
+    height: 138px;
   }
 
   .additionals__flex {
     justify-content: flex-end;
-    gap: 49px;
+    gap: 68px;
     font-size: 16px;
     line-height: 20px;
     align-items: center;
     padding: 0;
+    margin-right: 5px;
   }
 
   .additionals__key {
     font-size: 20px;
     line-height: 20px;
-    padding: 25px 0;
+    padding: 26px 0;
     border: none;
   }
 
   .additionals__value {
-    padding: 10px 0;
+    padding: 30px 0;
+    text-align: right;
+    margin-top: 10px;
   }
 
   .additionals__order {
     grid-column: 1/-1;
-    margin-bottom: 28px;
-    width: 623px;
+    margin-bottom: 30px;
+    width: 630px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
   }
 
   .additionals__paragraf {
@@ -160,14 +170,15 @@
 
   .additionals__text {
     padding-left: 421px;
-    padding-top: 71px;
+    padding-top: 73px;
     min-height: 200px;
     border: none;
+    text-align: start;
   }
 
   .additionals__text::before {
-    top: 57px;
-    left: 70px;
+    top: 62px;
+    left: 79px;
   }
 
   .additionals__list {
@@ -177,7 +188,7 @@
 
 @media (min-width: $desktop-width) {
   .additionals {
-    padding: 76px 0 0;
+    padding: 70px 0 0;
     width: 1220px;
   }
 
@@ -195,24 +206,29 @@
     justify-content: flex-end;
     border-left: none;
     border-right: none;
+    height: 70px;
   }
 
   .additionals__key {
     margin-right: auto;
+    padding-bottom: 0;
   }
 
   .additionals__list {
     margin: 0;
     min-width: 890px;
+    padding-bottom: 0;
   }
 
   .additionals__flex {
     width: 285px;
     justify-content: space-between;
+    margin-right: -5px;
   }
 
   .additionals__value {
     font-size: 16px;
+    padding: 0;
   }
 
   .additionals__order {
@@ -239,5 +255,16 @@
 
   .additionals__text::before {
     top: 57px;
+  }
+
+  .additionals__title {
+    margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 0;
+  }
+
+  .additionals__title::before {
+    top: 11%;
   }
 }

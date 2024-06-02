@@ -1,6 +1,6 @@
 .hero {
   background-image:
-    linear-gradient($bg-color 50%, #ffffff 50%),
+    linear-gradient(to top, #ffffff 175px, $bg-color 175px,),
     image-set(url("../../images/index-background-mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/index-background-mobile@2x.jpg") type("image/jpg") 2x),
     linear-gradient(to bottom, rgba(78, 78, 83), rgba(67, 66, 71) 50%);
@@ -10,6 +10,11 @@
   text-align: center;
   background-color: $bg-color;
 }
+
+.hero__button {
+  margin: 0 auto;
+}
+
 
 @media (min-width: $tablet-width) {
   .hero {
@@ -41,12 +46,7 @@
   text-transform: uppercase;
   color: #ffffff;
   display: block;
-  margin-bottom: 29px;
-}
-
-.hero-button {
-  margin: 0 20px;
-  padding: 10px 63px;
+  margin-bottom: 20px;
 }
 
 .hero__image {
@@ -64,10 +64,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .hero-button {
+  .hero__button {
     max-width: 244px;
     content: "";
-    transform: translate(120px, -570px);
+    transform: translate(120px, -575px);
     padding: 14px 26px;
     margin: 0;
   }
@@ -76,24 +76,33 @@
 @media (min-width: $desktop-width) {
   .hero {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 112px;
+    grid-template-columns: 447px 552px auto;
+    grid-template-rows: auto auto 1fr;
+    align-items: start;
+    background-color: transparent;
   }
 
   .hero__title {
-    padding: 0 0 40px 120px;
+    padding: 80px 10px 40px 80px;
     width: 40vw;
+    grid-column: 1/-3;
+    grid-row: 1/2;
   }
 
   .hero__text {
-    padding: 0 0 52px 120px;
+    padding: 0 10px 52px 80px;
     margin: 0;
-    grid-column: 1;
+    grid-column: 1/2;
   }
 
-  .hero-button {
+  .hero__button {
     grid-column: 1;
     transform: none;
-    margin-left: 120px;
+    margin-left: 80px;
+  }
+
+  .hero__prodict-image {
+    grid-column: 2/3;
+    grid-row: 1/4;
   }
 }
