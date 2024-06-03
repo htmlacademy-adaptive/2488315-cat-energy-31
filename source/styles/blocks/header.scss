@@ -14,11 +14,12 @@
     right: 21px;
     cursor: pointer;
     background-color: #ffffff;
-    background-image: url("../../icons/stack.svg#icon-close");
+    background-image: url("../../icons/stack.svg#burger");
     background-repeat: no-repeat;
     border: none;
     width: 18px;
     height: 18px;
+    display: none;
 
     &:hover {
       opacity: 0.6;

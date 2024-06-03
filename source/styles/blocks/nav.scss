@@ -10,7 +10,7 @@
 @media (max-width: $mobile-width-only) {
   .nav__item {
     border-bottom: 2px solid #f2f2f2;
-    padding: 23px 0;
+    padding: 22px 0 24px;
   }
 
   .nav__link {
@@ -29,10 +29,6 @@
     &:active {
       color: #6b6b6b;
     }
-  }
-
-  .nav__link--current::after {
-    background-color: #ffffff;
   }
 }
 
@@ -68,25 +64,25 @@
   .nav__link:active:not(.nav__link--current) {
     opacity: 0.2;
   }
-}
 
-.nav__link--current {
-  position: relative;
-  padding-right: 7px;
-}
+  .nav__link--current::after {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 2px;
+    background-color: $basic-color;
+    left: 0;
+    bottom: -8px;
+  }
 
-.nav__link--current::after {
-  content: "";
-  position: absolute;
-  width: 98%;
-  height: 2px;
-  background-color: $basic-color;
-  left: 0;
-  bottom: -8px;
-}
+  .nav__link--current {
+    position: relative;
+    padding-right: 7px;
+  }
 
-.nav__item {
-  border: none;
+  .nav__item {
+    border: none;
+  }
 }
 
 
