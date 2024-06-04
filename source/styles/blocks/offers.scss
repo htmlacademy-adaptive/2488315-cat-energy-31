@@ -16,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .offers {
-    padding: 0 30px;
+    padding: 0 30px 0 50px;
   }
 
   .offers__wrapper {
@@ -35,7 +35,7 @@
 
 @media (min-width: $desktop-width) {
   .offers {
-    padding: 140px 0 40px;
+    padding: 130px 0 40px;
   }
 
   .offers__wrapper {

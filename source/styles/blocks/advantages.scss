@@ -1,5 +1,5 @@
 .advantages {
-  padding: 0 20px 25px;
+  padding: 0 20px 20px;
 }
 
 .advantages__list {
@@ -65,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 15px 109px 5px 30px;
+    padding: 10px 109px 5px 50px;
     counter-reset: number;
   }
 

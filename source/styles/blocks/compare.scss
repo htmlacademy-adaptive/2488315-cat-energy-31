@@ -96,12 +96,13 @@
     height: 512px;
     display: grid;
     grid-template-columns: 280px auto 280px;
-    margin: 0 auto;
+    margin: 0 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .compare {
     padding-top: 15px;
+    margin: 0;
   }
 }

@@ -24,7 +24,7 @@
 
 .adress__online {
   width: 100%;
-  min-height: 320px;
+  min-height: 362px;
   border: none;
 }
 
@@ -36,8 +36,9 @@
 
 @media (min-width: $tablet-width) {
   .adress__inner {
-    padding: 62px 70px;
+    padding: 62px 65px 60px 90px;
     justify-content: space-between;
+    background-color: #ffffff;
   }
 
   .adress__partnership {
@@ -66,7 +67,7 @@
 
 @media (min-width: $desktop-width) {
   .adress__inner {
-    padding: 60px 80px;
+    padding: 65px 80px;
     width: 565px;
     background-color: #ffffff;
     top: 95px;
