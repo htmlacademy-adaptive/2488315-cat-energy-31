@@ -4,7 +4,7 @@
 
 .footer__logo {
   @include link;
-  padding: 35px 96px 20px;
+  padding: 40px 96px 20px;
   justify-content: center;
   gap: 20px;
 }
@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding: 35px 33px 40px 0;
+    padding: 40px 30px 40px 20px;
   }
 
   .footer__wrapper {
@@ -76,7 +76,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 65px 0;
+    padding: 55px 0;
   }
 
   .footer__wrapper {
