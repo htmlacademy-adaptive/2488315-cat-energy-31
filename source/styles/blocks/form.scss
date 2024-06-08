@@ -16,7 +16,7 @@
 }
 
 .form__input:focus-visible:not(:disabled) {
-  border: 2px solid $color-text;
+  outline: 2px solid $color-text;
 }
 
 .form__input:user-invalid {
