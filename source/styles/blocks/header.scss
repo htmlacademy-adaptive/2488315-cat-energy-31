@@ -4,13 +4,22 @@
 
 .header__nav {
   border-top: 1px solid #f2f2f2;
+  position: absolute;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+  display: none;
 }
 
+.header__nav--nojs {
+  position: static;
+  display: block;
+}
 
 @media (max-width: $mobile-width-only) {
   .header__toggle {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 21px;
     cursor: pointer;
     background-color: #ffffff;
@@ -19,7 +28,7 @@
     border: none;
     width: 18px;
     height: 18px;
-    display: none;
+    display: block;
 
     &:hover {
       opacity: 0.6;
@@ -32,6 +41,15 @@
     &:active {
       opacity: 0.4;
     }
+  }
+
+  .header__toggle--nojs {
+    display: none;
+  }
+
+  .header__toggle--opened {
+    background-image: url("../../icons/stack.svg#icon-close");
+    top: 23px;
   }
 }
 
@@ -58,5 +76,9 @@
     width: 1220px;
     margin: 0 auto;
     justify-content: space-between;
+  }
+
+  .header__nav--nojs {
+    background-color: transparent;
   }
 }
