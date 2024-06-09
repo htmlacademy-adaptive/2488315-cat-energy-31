@@ -4,20 +4,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 70px 60px;
-    padding: 0;
-    margin-left: 50px;
+  .card-list__item {
+    width: 324px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .card-list {
-    gap: 67px 80px;
-    padding: 0;
-    margin-left: 110px;
-    width: 1220px;
+  .card-list__item {
+    width: 245px;
   }
 }

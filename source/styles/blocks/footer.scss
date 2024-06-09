@@ -4,7 +4,7 @@
 
 .footer__logo {
   @include link;
-  padding: 40px 96px 20px;
+  padding: 35px 96px 20px;
   justify-content: center;
   gap: 20px;
 }
@@ -18,7 +18,7 @@
   @include font (16px, 20px, #444444, $font-prime);
   text-transform: none;
   display: flex;
-  padding: 20px 20px 40px;
+  padding: 18px 20px 40px;
   justify-content: space-between;
   align-items: center;
   max-width: 450px;
@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding: 40px 30px 40px 20px;
+    padding: 42px 30px 40px 20px;
   }
 
   .footer__wrapper {
@@ -59,7 +59,7 @@
 
   .footer__academy {
     margin: 0;
-    gap: 18px;
+    gap: 20px;
     max-width: 200px;
   }
 
@@ -76,7 +76,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 55px 0;
+    padding: 60px 0;
   }
 
   .footer__wrapper {

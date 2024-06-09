@@ -39,7 +39,7 @@
   width: 100vw;
   background-color: $basic-color;
   position: absolute;
-  top: 40%;
+  top: 41%;
   left: -50vw;
   z-index: -1;
   box-shadow: 100vw 0 0 $basic-color;
@@ -54,7 +54,7 @@
   @include font (16px, 16px, #222222, $font-second);
   text-transform: uppercase;
   margin: 0;
-  padding: 13px 0 10px;
+  padding: 14px 0 10px;
   border-top: 1px solid #cdcdcd;
 }
 
@@ -71,13 +71,13 @@
 }
 
 .additionals__order {
-  margin-bottom: 19px;
+  margin: 3px 0 15px;
 }
 
 .additionals__text {
   @include font (16px, 20px, #ffffff, $font-prime);
   min-height: 275px;
-  padding: 175px 10px 10px;
+  padding: 170px 10px 10px;
   text-align: center;
   margin: 0;
   position: relative;
@@ -90,7 +90,7 @@
     height: 80px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 45px;
+    top: 42px;
     left: 35%;
   }
 }
@@ -98,7 +98,7 @@
 
 @media (min-width: $tablet-width) {
   .additionals {
-    padding: 20px 30px 40px;
+    padding: 15px 30px 40px;
     max-width: 100%;
   }
 
@@ -124,7 +124,7 @@
 
   .additionals__flex {
     justify-content: flex-end;
-    gap: 68px;
+    gap: 63px;
     font-size: 16px;
     line-height: 20px;
     align-items: center;
@@ -135,7 +135,7 @@
   .additionals__key {
     font-size: 20px;
     line-height: 20px;
-    padding: 26px 0;
+    padding: 27px 0 10px;
     border: none;
   }
 
@@ -146,7 +146,7 @@
 
   .additionals__order {
     grid-column: 1/-1;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     width: 630px;
     font-size: 16px;
     line-height: 20px;
@@ -175,7 +175,7 @@
   }
 
   .additionals__text::before {
-    top: 62px;
+    top: 58px;
     left: 79px;
   }
 
@@ -194,7 +194,7 @@
   .additionals__container {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 85px;
     max-width: 1500px;
   }
 
@@ -211,7 +211,8 @@
   .additionals__key {
     margin-right: auto;
     max-width: 200px;
-    padding-bottom: 5px;
+    padding-bottom: 26px;
+    padding-top: 25px;
   }
 
   .additionals__list {
@@ -223,6 +224,7 @@
   .additionals__flex {
     width: 285px;
     justify-content: space-between;
+    gap: 60px;
     margin-right: -5px;
   }
 
@@ -235,6 +237,7 @@
     margin: 0;
     align-self: center;
     width: 244px;
+    padding: 10px;
   }
 
   .additionals__paragraf {
@@ -256,7 +259,8 @@
   }
 
   .additionals__text::before {
-    top: 57px;
+    top: 59px;
+    left: 85px;
   }
 
   .additionals__title {
@@ -264,9 +268,10 @@
     font-size: 40px;
     line-height: 40px;
     padding-top: 0;
+    padding-bottom: 77px;
   }
 
   .additionals__title::before {
-    top: 11%;
+    top: 15%;
   }
 }
