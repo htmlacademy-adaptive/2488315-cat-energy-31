@@ -33,9 +33,6 @@
   }
 }
 
-.nav__no-nav {
-  display: none;
-}
 
 @media (min-width: $tablet-width) {
   .nav__list {
@@ -49,11 +46,6 @@
     margin-left: 10px;
   }
 
-  .nav__no-nav {
-    display: block;
-    background-color: transparent;
-    margin-left: 277px;
-  }
 
   .nav__link {
     list-style-type: none;
@@ -111,9 +103,5 @@
 
   .nav__link--current::after {
     background-color: #ffffff;
-  }
-
-  .nav__no-nav {
-    margin-left: 635px;
   }
 }

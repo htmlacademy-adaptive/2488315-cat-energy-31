@@ -16,6 +16,10 @@
   display: block;
 }
 
+.header__nav--no-nav {
+  display: none;
+}
+
 @media (max-width: $mobile-width-only) {
   .header__toggle {
     position: absolute;
@@ -67,6 +71,12 @@
   .header__nav {
     border: none;
   }
+
+  .header__nav--no-nav {
+    display: block;
+    background-color: transparent;
+    margin-left: 277px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -80,5 +90,10 @@
 
   .header__nav--nojs {
     background-color: transparent;
+  }
+
+
+  .header__nav--no-nav {
+    margin-left: 635px;
   }
 }
