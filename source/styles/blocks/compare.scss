@@ -104,5 +104,7 @@
   .compare {
     padding-top: 15px;
     margin: 0;
+    padding-right: 10px;
+    grid-template-columns: 270px auto 270px;
   }
 }
