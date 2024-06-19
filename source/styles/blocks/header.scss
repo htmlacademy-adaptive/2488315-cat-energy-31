@@ -20,6 +20,12 @@
   display: none;
 }
 
+
+.header__logo--catalog {
+  padding: 15px 20px 9px;
+}
+
+
 @media (max-width: $mobile-width-only) {
   .header__toggle {
     position: absolute;
@@ -59,8 +65,8 @@
 
 @media (min-width: $tablet-width) {
   .header__wrapper {
-    padding: 25px 30px 50px;
-    gap: 30px;
+    padding: 10px 34px 50px 30px;
+    gap: 59px;
     display: flex;
   }
 
@@ -94,6 +100,7 @@
 
 
   .header__nav--no-nav {
-    margin-left: 635px;
+
+    margin-left: 645px;
   }
 }

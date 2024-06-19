@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding: 42px 30px 40px 20px;
+    padding: 42px 30px 40px 0;
   }
 
   .footer__wrapper {
@@ -76,7 +76,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 60px 0;
+    padding: 60px 0 70px;
   }
 
   .footer__wrapper {

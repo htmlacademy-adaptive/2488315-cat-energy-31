@@ -31,7 +31,6 @@
   }
 
   .hero__prodict-image {
-    margin-left: 20px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -49,7 +48,7 @@
     color: #000000;
     font-size: 60px;
     line-height: 60px;
-    padding: 0 0 40px 140px;
+    padding: 0 0 40px 120px;
   }
 }
 
@@ -69,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .hero__text {
     color: #000000;
-    padding: 0 30px 0 140px;
+    padding: 0 30px 0 120px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -79,7 +78,7 @@
   .hero__button {
     max-width: 244px;
     content: "";
-    transform: translate(140px, -585px);
+    transform: translate(120px, -585px);
     padding: 14px 26px;
     margin: 5px 0 0;
   }

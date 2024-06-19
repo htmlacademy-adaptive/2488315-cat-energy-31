@@ -3,6 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  background-color: #ffffff;
+}
+
+.adress__inner--catalog {
   background-color: #f2f2f2;
 }
 
@@ -39,8 +43,13 @@
 
 @media (min-width: $tablet-width) {
   .adress__inner {
-    padding: 60px 65px 60px 90px;
+    padding: 65px 65px 60px 70px;
     justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+  .adress__inner--catalog {
+    padding-top: 60px;
     background-color: #f2f2f2;
   }
 
@@ -64,6 +73,10 @@
   .adress__online {
     width: 100%;
     border: none;
+    height: 400px;
+  }
+
+  .adress__online iframe {
     height: 400px;
   }
 }
